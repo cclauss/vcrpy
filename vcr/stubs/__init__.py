@@ -34,6 +34,9 @@ class VCRFakeSocket:
         """
         return 0  # wonder how bad this is....
 
+    def recv(self, *args, **kwargs):
+        return None
+
 
 def parse_headers(header_list):
     """
